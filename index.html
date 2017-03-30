@@ -858,6 +858,7 @@
     $(document).ready(function(){
 
       var $menu = $("#menuF");
+      var $container = $("#home > div.headerLine > div.container")
 
       $(window).scroll(function(){
         if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
@@ -866,12 +867,22 @@
             .addClass("fixed transbg")
             .fadeIn('fast');
           });
+
+          $container.fadeOut('fast', function() {
+            $(this).addClass("fixed-container")
+            .fadeIn('fast');
+          })
         } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
           $menu.fadeOut('fast',function(){
             $(this).removeClass("fixed transbg")
             .addClass("default")
             .fadeIn('fast');
           });
+
+          $container.fadeOut('fast', function() {
+            $(this).removeClass("fixed-container")
+            .fadeIn('fast');
+          })
         }
       });
 
