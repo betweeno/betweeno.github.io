@@ -862,26 +862,26 @@
 
       $(window).scroll(function(){
         if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
-          $menu.fadeOut('fast',function(){
+          $menu.fadeOut('slow',function(){
             $(this).removeClass("default")
             .addClass("fixed transbg")
-            .fadeIn('fast');
+            .fadeIn('slow');
           });
 
-          $container.fadeOut('fast', function() {
+          $container.fadeOut('slow', function() {
             $(this).addClass("fixed-container")
-            .fadeIn('fast');
+            .fadeIn('slow');
           })
         } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
-          $menu.fadeOut('fast',function(){
+          $menu.fadeOut('slow',function(){
             $(this).removeClass("fixed transbg")
             .addClass("default")
-            .fadeIn('fast');
+            .fadeIn('slow');
           });
 
-          $container.fadeOut('fast', function() {
+          $container.fadeOut('slow', function() {
             $(this).removeClass("fixed-container")
-            .fadeIn('fast');
+            .fadeIn('slow');
           })
         }
       });
