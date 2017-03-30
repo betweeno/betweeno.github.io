@@ -874,32 +874,34 @@
           });
         }
       });
+
     });
     //jQuery
     </script>
     <script>
     var _contentTop, _contentBottom;
     /*menu*/
+    var contentTop      =   [];
+    var contentBottom   =   [];
+
+    $('.navmenu').find('a').each(function(){
+      contentTop.push( $( $(this).attr('href') ).offset().top );
+      contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
+    })
+
     function calculateScroll() {
-      var contentTop      =   [];
-      var contentBottom   =   [];
       var winTop      =   $(window).scrollTop();
       var rangeTop    =   200;
       var rangeBottom =   500;
-      $('.navmenu').find('a').each(function(){
-        contentTop.push( $( $(this).attr('href') ).offset().top );
-        contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
-      })
+
       $.each( contentTop, function(i){
         if ( winTop > contentTop[i] - rangeTop && winTop < contentBottom[i] - rangeBottom ){
           $('.navmenu li')
           .removeClass('active')
           .eq(i).addClass('active');
         }
+        console.log(i)
       })
-
-      _contentTop = contentTop
-      console.log(winTop)
     };
 
     $(document).ready(function(){
@@ -907,7 +909,6 @@
 
       $(window).scroll(_.throttle(function(event) {
         calculateScroll();
-        console.log('event is called')
       }, 500));
 
       $('.navmenu ul li a').click(function() {
