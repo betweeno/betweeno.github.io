@@ -4,10 +4,11 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
+    "start": "node_modules/.bin/webpack-dashboard -t 'BetweenO website' -- webpack-dev-server --colors --no-info",
     "build": "npm run clean && node_modules/.bin/webpack -p",
     "build:dev": "npm run clean && node_modules/.bin/webpack",
     "build:watch": "npm run clean && node_modules/.bin/webpack --watch",
-    "clean": "node_modules/.bin/rimraf bin/*"
+    "clean": "node_modules/.bin/rimraf dest/*"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/betweeno/betweeno.github.io#readme",
   "devDependencies": {
+    "autoprefixer": "^6.7.7",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
     "babel-plugin-root-import": "^5.1.0",
@@ -29,9 +31,17 @@
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-2": "^6.22.0",
     "concurrently": "^3.4.0",
+    "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-harddisk-plugin": "^0.1.0",
     "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.2",
     "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "url-loader": "^0.5.8",
     "webpack": "^2.3.2",
+    "webpack-dashboard": "^0.3.0",
     "webpack-dev-server": "^2.4.2"
   },
   "dependencies": {
