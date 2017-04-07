@@ -88,7 +88,7 @@ $(document).ready(function() {
     navigation : false, // Show next and prev buttons
     slideSpeed : 300,
     paginationSpeed : 400,
-    autoHeight : true,
+    autoHeight : false,
     itemsCustom : [
       [0, 1],
       [450, 2],

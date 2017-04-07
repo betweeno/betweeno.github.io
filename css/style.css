@@ -168,6 +168,10 @@ a.fa.fa-angle-down:hover{
 	padding: 80px 0;
 }
 
+#tf-about .center {
+	text-align: center;
+}
+
 ul.about-list{ margin: 30px 0 0 ;}
 ul.about-list li{
 	display: block;
@@ -335,6 +339,10 @@ img.img-circle.team-img {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
 	padding: 80px 0;
 	background-attachment: fixed;
+}
+
+#tf-clients .owl-wrapper {
+	width: 300px;
 }
 
 #clients .item{
