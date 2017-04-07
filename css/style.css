@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
 
 body, html{
-	font-family: 'Lato', sans-serif;
+	font-family: sans-serif, 'Lato';
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #5a5a5a;
@@ -167,6 +167,7 @@ a.fa.fa-angle-down:hover{
 #tf-about{
 	padding: 80px 0;
 }
+
 ul.about-list{ margin: 30px 0 0 ;}
 ul.about-list li{
 	display: block;
@@ -178,8 +179,8 @@ ul.about-list li span{
 	margin-right: 10px;
 }
 
-/* Team Section */
-#tf-team{
+/* Services Section */
+#tf-services{
 	background: url(../img/03.jpg);
 	background-size: cover;
 	background-position: center;
@@ -187,7 +188,8 @@ ul.about-list li span{
 	background-repeat: no-repeat;
 	color: #ffffff;
 }
-#tf-team .overlay{
+
+#tf-services .overlay{
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
@@ -199,6 +201,38 @@ ul.about-list li span{
 	background-attachment: fixed;
 	padding: 80px 0;
 }
+
+.space{
+	margin-top: 40px;
+}
+
+#tf-services i.fa {
+	font-size: 40px;
+	border: 4px solid #FCAC45;
+	width: 100px;
+	height: 100px;
+	padding: 27px 25px;
+	margin-bottom: 10px;
+	border-radius: 50%;
+	transition: all 0.5s;
+}
+
+#tf-services i.fa.fa-mobile{
+	font-size: 50px;
+	padding: 20px 25px;
+}
+
+#tf-services .service:hover>i.fa{
+	background: #FCAC45;
+	color: #ffffff;
+}
+
+
+/* Team Section */
+#tf-team{
+	padding: 80px 0;
+}
+
 .section-title.center{
 	padding: 30px 0;
 }
@@ -227,7 +261,7 @@ ul.about-list li span{
 #team .item{
 	padding: 0;
 	margin: 15px;
-	color: #FFF;
+	color: #5a5a5a;
 	text-align: center;
 }
 
@@ -247,7 +281,7 @@ img.img-circle.team-img {
 
 #tf-team .thumbnail .caption {
 	padding: 9px;
-	color: #F2F2F2;
+	color: #5a5a5a;
 }
 
 .owl-theme .owl-controls .owl-page span {
@@ -270,38 +304,11 @@ img.img-circle.team-img {
 	opacity: 1;
 	background: #FCAC45;
 }
-.owl-theme .owl-controls .owl-page.active span{
+#tf-team .owl-theme .owl-controls .owl-page.active span{
 	background: #FCAC45;
 }
-
-/* Services Section */
-#tf-services{
-	padding: 80px 0;
-}
-
-.space{
-	margin-top: 40px;
-}
-
-#tf-services i.fa {
-	font-size: 40px;
-	border: 4px solid #FCAC45;
-	width: 100px;
-	height: 100px;
-	padding: 27px 25px;
-	margin-bottom: 10px;
-	border-radius: 50%;
-	transition: all 0.5s;
-}
-
-#tf-services i.fa.fa-mobile{
-	font-size: 50px;
-	padding: 20px 25px;
-}
-
-#tf-services .service:hover>i.fa{
-	background: #FCAC45;
-	color: #ffffff;
+#tf-team .owl-theme .owl-controls .owl-page span{
+	background: #fee9cd;
 }
 
 /* Clients Section */
