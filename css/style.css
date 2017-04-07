@@ -206,6 +206,10 @@ ul.about-list li span{
 	margin-top: 40px;
 }
 
+#tf-services .row div {
+	margin-bottom: 40px;
+}
+
 #tf-services i.fa {
 	font-size: 40px;
 	border: 4px solid #FCAC45;
