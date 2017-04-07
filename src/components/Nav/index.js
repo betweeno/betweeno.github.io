@@ -1,9 +1,9 @@
 import React from 'react';
-import './Nav.scss'
+import style from './Nav.scss'
 
 const Nav = () => {
   return (
-    <div id="nav">
+    <div id="nav" className="container">
 
     </div>
   );
