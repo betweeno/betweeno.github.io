@@ -31,7 +31,6 @@ var defaultPlugins = [
     inject: false,
     alwaysWriteToDisk: true
   }),
-  new HtmlWebpackHarddiskPlugin(),
   new ExtractTextPlugin({
     filename: '[name].bundle.css',
     allChunks: true,
