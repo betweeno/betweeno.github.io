@@ -3,24 +3,24 @@
     "image": "img/team/01.jpg",
     "name": "김태현",
     "role": "CEO / 공동대표",
-    "caption": "김태현입니당"
+    "caption": ""
   },
   {
     "image": "img/team/02.jpg",
     "name": "이진용",
     "role": "COO / 공동대표",
-    "caption": "이진용입니당"
+    "caption": ""
   },
   {
     "image": "img/team/03.jpg",
     "name": "박주형",
     "role": "CTO",
-    "caption": "박주형입니당"
+    "caption": ""
   },
   {
     "image": "img/team/04.jpg",
     "name": "류수희",
     "role": "CSO",
-    "caption": "류수희입니당"
+    "caption": ""
   }
 ]
