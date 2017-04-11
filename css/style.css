@@ -600,7 +600,40 @@ nav#footer p{
 }
 
 /*Custom */
+/*#tf-about .container div:first-child > div {
+	padding: 0% 5%;
+}*/
 
 .b_pad {
 	padding: 0% 10%;
+}
+
+.b_vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.b_vc {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+
+#about-sub-row {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	padding: 10% 10%;
+}
+
+@media query {
+
+}
+
+#about-sub-row > img {
+	width: 100%;
+	margin-bottom: 13%;
 }
