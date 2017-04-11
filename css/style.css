@@ -235,6 +235,10 @@ ul.about-list li span{
 	color: #ffffff;
 }
 
+#tf-services p {
+	padding: 0% 8%;
+}
+
 
 /* Team Section */
 #tf-team{
