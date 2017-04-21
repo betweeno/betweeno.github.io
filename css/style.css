@@ -637,3 +637,8 @@ nav#footer p{
 	width: 100%;
 	margin-bottom: 13%;
 }
+
+#en-button {
+	font-weight: bold;
+	color: #FCAC45 !important;
+}

@@ -56,7 +56,9 @@ $(document).ready(function() {
     offset: 80
   })
 
-  $.getJSON('data/teams.json')
+	var is_en = window.location.pathname.indexOf('en') > 0;
+	var team_url = is_en ? 'data/teams-en.json' : '/data/teams.json'
+  $.getJSON(team_url)
     .done(function(data) {
       $("#team").html('');
 

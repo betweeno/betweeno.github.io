@@ -1,0 +1,26 @@
+[
+  {
+    "image": "img/team/01.jpg",
+    "name": "Taehyun Kim",
+    "role": "CEO",
+    "caption": ""
+  },
+  {
+    "image": "img/team/02.jpg",
+    "name": "Jinyong Lee",
+    "role": "COO",
+    "caption": ""
+  },
+  {
+    "image": "img/team/03.jpg",
+    "name": "Juhyeong Park",
+    "role": "CTO",
+    "caption": ""
+  },
+  {
+    "image": "img/team/04.jpg",
+    "name": "SooHee Ryu",
+    "role": "CSO",
+    "caption": ""
+  }
+]
